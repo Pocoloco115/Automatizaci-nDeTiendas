@@ -11,5 +11,10 @@ namespace AutomatizaciónDeTiendas
         {
 
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
