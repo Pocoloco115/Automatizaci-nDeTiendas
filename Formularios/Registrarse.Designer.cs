@@ -101,6 +101,7 @@
             btnRegistrarse.TabIndex = 7;
             btnRegistrarse.Text = "Registrarse";
             btnRegistrarse.UseVisualStyleBackColor = true;
+            btnRegistrarse.Click += btnRegistrarse_Click;
             // 
             // Registrarse
             // 
@@ -116,6 +117,7 @@
             Controls.Add(btnIngresar);
             Name = "Registrarse";
             Text = "Registrarse";
+            Load += Registrarse_Load;
             ResumeLayout(false);
             PerformLayout();
         }

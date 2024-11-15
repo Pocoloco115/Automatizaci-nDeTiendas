@@ -138,6 +138,7 @@
             Controls.Add(lblNombre);
             Name = "CrearCuenta";
             Text = "CrearCuenta";
+            Load += CrearCuenta_Load;
             ResumeLayout(false);
             PerformLayout();
         }

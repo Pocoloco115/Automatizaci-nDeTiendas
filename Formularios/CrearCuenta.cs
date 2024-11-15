@@ -22,7 +22,7 @@ namespace AutomatizaciónDeTiendas.Formularios
         {
             Random rnd = new Random();
 
-            int id = rnd.Next(100000, 100000);
+            int id = rnd.Next(100000, 999999);
 
             txtId.Text = id.ToString();
         }
@@ -35,6 +35,10 @@ namespace AutomatizaciónDeTiendas.Formularios
             {
                 MessageBox.Show("Completa los campos tio");
             }
+            else if(txtPassword.Text != txtConfirmacion.Text)
+            {
+                MessageBox.Show("Ingrese su contraseña correctamente");
+            }
             else
             {
                 string nombre = txtNombre.Text;
@@ -42,7 +46,12 @@ namespace AutomatizaciónDeTiendas.Formularios
                 int id = Convert.ToInt32(txtId.Text);
                 Cliente cliente = new Cliente(id, nombre, password);
             }
-            
+
+        }
+
+        private void CrearCuenta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,13 +15,16 @@ namespace AutomatizaciónDeTiendas.Estructuras
 
     public static class OperadoresPredefinidos
     {
-        public static List<Operador> ObtenerOperadores()
+        public static List<Operador> operadores = new List<Operador>
         {
-            return new List<Operador>
-            {
+
                 new Operador { OperadorID = 1, NombreOperador = "William", Password = "nigga2" },
                 new Operador { OperadorID = 2, NombreOperador = "Walter", Password = "nigga" }
-            };
+        };
+
+        public static bool VerificacionCredenciales(int id,  string password)
+        {
+            return operadores.Any(x => x.Password == password && x.OperadorID == id);
         }
     }
 }

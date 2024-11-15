@@ -21,5 +21,16 @@ namespace AutomatizaciónDeTiendas.Formularios
         {
 
         }
+
+        private void Registrarse_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            CrearCuenta crearCuenta = new CrearCuenta();
+            crearCuenta.ShowDialog();
+        }
     }
 }

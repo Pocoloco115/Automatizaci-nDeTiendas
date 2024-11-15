@@ -76,6 +76,7 @@
             btnOperador.TabIndex = 3;
             btnOperador.Text = "Operador";
             btnOperador.UseVisualStyleBackColor = false;
+            btnOperador.Click += btnOperador_Click;
             // 
             // LogIn
             // 
